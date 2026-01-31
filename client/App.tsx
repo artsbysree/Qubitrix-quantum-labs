@@ -13,13 +13,13 @@ import Dashboard from "./pages/Dashboard";
 import Learning from "./pages/Learning";
 import Labs from "./pages/Labs";
 import QubitLab from "./pages/QubitLab";
-import NoiseImpactLab from "./pages/NoiseImpactLab";
-import PlaceholderLab from "./pages/PlaceholderLab";
+import GatesLab from "./pages/GatesLab";
+import EntanglementLab from "./pages/EntanglementLab";
+import NoiseLab from "./pages/NoiseLab";
 import Mentor from "./pages/Mentor";
 import Settings from "./pages/Settings";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-
 
 const queryClient = new QueryClient();
 
@@ -37,12 +37,13 @@ const App = () => (
           <Route path="/learning" element={<Learning />} />
           <Route path="/labs" element={<Labs />} />
           <Route path="/labs/qubit" element={<QubitLab />} />
+          <Route path="/labs/gates" element={<GatesLab />} />
+          <Route path="/labs/entanglement" element={<EntanglementLab />} />
+          <Route path="/labs/noise" element={<NoiseLab />} />
           <Route path="/mentor" element={<Mentor />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/about" element={<About />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="/labs/gates" element={<NoiseImpactLab />} />
-          <Route path="/labs/placeholder" element={<PlaceholderLab />} />
+          {/* Catch all - must be last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -51,5 +52,3 @@ const App = () => (
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
-
-
