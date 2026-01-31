@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 export default function About() {
   return (
     <Layout>
-      <div className="bg-white min-h-screen">
+      <div className="bg-gradient-to-br from-background via-background to-background/80 min-h-screen">
         {/* Header */}
         <div className="border-b border-border bg-gradient-to-r from-primary/5 to-secondary/5">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
