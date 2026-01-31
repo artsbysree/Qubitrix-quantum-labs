@@ -41,9 +41,9 @@ const App = () => (
           <Route path="/settings" element={<Settings />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
           <Route path="/labs/noise" element={<NoiseImpactLab />} />
           <Route path="/labs/placeholder" element={<PlaceholderLab />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
@@ -52,4 +52,4 @@ const App = () => (
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-<Route path="*" element={<NotFound />} />
+
