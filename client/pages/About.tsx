@@ -5,7 +5,7 @@ export default function About() {
     <Layout>
       <div className="bg-gradient-to-br from-background via-background to-background/80 min-h-screen">
         {/* Header */}
-        <div className="border-b border-border bg-gradient-to-r from-primary/5 to-secondary/5">
+        <div className="border-b border-border bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <h1 className="text-4xl font-bold text-foreground mb-4">About Qubitrix</h1>
             <p className="text-lg text-muted-foreground">
@@ -51,7 +51,7 @@ export default function About() {
                     "Run experiments, analyze results, and learn from quantum behavior in real time.",
                 },
               ].map((feature, idx) => (
-                <div key={idx} className="border border-border rounded-lg p-6">
+                <div key={idx} className="border border-border rounded-xl p-6 bg-card hover:border-primary/50 transition-colors">
                   <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
                   <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </div>
@@ -62,7 +62,7 @@ export default function About() {
           {/* Technology Stack */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">Built With</h2>
-            <div className="bg-muted/30 border border-border rounded-lg p-8">
+            <div className="bg-muted/30 border border-border rounded-xl p-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
                   { name: "React", icon: "⚛️" },
@@ -80,14 +80,14 @@ export default function About() {
           </div>
 
           {/* Contact Section */}
-          <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
+          <div className="bg-primary/10 border border-primary/30 rounded-xl p-8">
             <h2 className="text-xl font-bold text-foreground mb-2">Get in Touch</h2>
             <p className="text-muted-foreground mb-4">
               Have questions or feedback? We'd love to hear from you.
             </p>
             <a
               href="mailto:support@qubitrix.example"
-              className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+              className="inline-block px-6 py-2 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all"
             >
               Contact Us
             </a>
