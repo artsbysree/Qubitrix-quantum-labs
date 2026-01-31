@@ -75,7 +75,7 @@ export default function Settings() {
                   name="email"
                   value={settings.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                  className="w-full px-4 py-2 border border-border rounded-lg bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                 />
               </div>
             </div>
