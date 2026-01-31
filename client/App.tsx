@@ -41,7 +41,7 @@ const App = () => (
           <Route path="/settings" element={<Settings />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="/labs/noise" element={<NoiseImpactLab />} />
+          <Route path="/labs/gates" element={<NoiseImpactLab />} />
           <Route path="/labs/placeholder" element={<PlaceholderLab />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
