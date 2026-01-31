@@ -21,9 +21,9 @@ export default function Signup() {
 
   return (
     <Layout hideNav={true}>
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted px-4">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-background/80 px-4 py-8">
         <div className="w-full max-w-md">
-          <div className="bg-white rounded-lg shadow-md border border-border p-8">
+          <div className="bg-card rounded-xl shadow-xl border border-border p-8">
             {/* Header */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
