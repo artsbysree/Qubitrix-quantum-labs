@@ -42,6 +42,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
+          <Route path="/labs/noise" element={<NoiseImpactLab />} />
+          <Route path="/labs/placeholder" element={<PlaceholderLab />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
