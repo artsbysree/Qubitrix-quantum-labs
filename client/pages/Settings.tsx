@@ -82,7 +82,7 @@ export default function Settings() {
           </div>
 
           {/* Learning Preferences Section */}
-          <div className="bg-white border border-border rounded-lg p-8 mb-8">
+          <div className="bg-card border border-border rounded-xl p-8 mb-8">
             <h2 className="text-xl font-bold text-foreground mb-6">Learning Preferences</h2>
 
             <div className="space-y-6">
@@ -129,7 +129,7 @@ export default function Settings() {
           </div>
 
           {/* Theme Section */}
-          <div className="bg-white border border-border rounded-lg p-8 mb-8">
+          <div className="bg-card border border-border rounded-xl p-8 mb-8">
             <h2 className="text-xl font-bold text-foreground mb-6">Display</h2>
 
             <div className="space-y-4">
@@ -145,10 +145,10 @@ export default function Settings() {
                     key={theme.value}
                     onClick={() => handleSelectChange("theme", theme.value)}
                     className={`p-4 border rounded-lg text-left transition-colors ${
-                      settings.theme === theme.value
-                        ? "border-primary bg-primary/10"
-                        : "border-border hover:border-primary/50"
-                    }`}
+                    settings.theme === theme.value
+                      ? "border-primary bg-primary/15"
+                      : "border-border hover:border-primary/50"
+                  }`}
                   >
                     <div className="text-xl mb-2">{theme.icon}</div>
                     <p className="font-medium text-foreground">{theme.label}</p>
@@ -159,7 +159,7 @@ export default function Settings() {
           </div>
 
           {/* Account Section */}
-          <div className="bg-white border border-border rounded-lg p-8">
+          <div className="bg-card border border-border rounded-xl p-8">
             <h2 className="text-xl font-bold text-foreground mb-6">Account</h2>
 
             <div className="space-y-4">
@@ -174,7 +174,7 @@ export default function Settings() {
 
               <button
                 onClick={handleLogout}
-                className="w-full py-3 px-4 border border-destructive text-destructive rounded-lg font-semibold hover:bg-destructive/5 transition-colors"
+                className="w-full py-3 px-4 border border-destructive text-destructive rounded-lg font-semibold hover:bg-destructive/10 transition-colors"
               >
                 Logout
               </button>
@@ -182,7 +182,7 @@ export default function Settings() {
           </div>
 
           {/* Save Changes Note */}
-          <div className="mt-8 bg-primary/10 border border-primary/20 rounded-lg p-4">
+          <div className="mt-8 bg-primary/10 border border-primary/30 rounded-xl p-4">
             <p className="text-sm text-primary font-medium">
               ✓ Changes are automatically saved
             </p>
