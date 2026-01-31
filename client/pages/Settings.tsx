@@ -34,7 +34,7 @@ export default function Settings() {
     <Layout>
       <div className="bg-gradient-to-br from-background via-background to-background/80 min-h-screen">
         {/* Header */}
-        <div className="border-b border-border bg-gradient-to-r from-primary/5 to-secondary/5">
+        <div className="border-b border-border bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <h1 className="text-3xl font-bold text-foreground mb-2">Settings</h1>
             <p className="text-muted-foreground">
