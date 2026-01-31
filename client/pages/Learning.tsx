@@ -29,7 +29,8 @@ const courses: CourseLevel[] = [
       {
         id: "b1",
         title: "What is Quantum Computing?",
-        description: "Explore the basics of quantum computing and why it's revolutionary",
+        description:
+          "Explore the basics of quantum computing and why it's revolutionary",
         content:
           "Quantum computers use quantum bits (qubits) instead of classical bits. Unlike classical bits that are either 0 or 1, qubits can exist in superposition - both 0 and 1 simultaneously. This fundamental difference allows quantum computers to process information in entirely new ways.",
         duration: "5 min",
@@ -37,7 +38,8 @@ const courses: CourseLevel[] = [
       {
         id: "b2",
         title: "Classical Bits vs Qubits",
-        description: "Understand the difference between classical and quantum information",
+        description:
+          "Understand the difference between classical and quantum information",
         content:
           "Classical bits are deterministic - they're either 0 or 1. Qubits are probabilistic and can be in a superposition of states. A qubit can be |0⟩, |1⟩, or any combination of both, giving quantum computers exponential computational advantages for certain problems.",
         duration: "7 min",
@@ -54,7 +56,8 @@ const courses: CourseLevel[] = [
       {
         id: "b4",
         title: "Measurement Basics",
-        description: "Understand how quantum measurement collapses superposition",
+        description:
+          "Understand how quantum measurement collapses superposition",
         content:
           "When you measure a qubit, superposition collapses into a definite state: either 0 or 1. The probability of each outcome depends on the amplitudes. This is fundamental: measurement destroys quantum information and cannot be undone.",
         relatedLab: "/labs/qubit",
@@ -140,7 +143,8 @@ const courses: CourseLevel[] = [
       {
         id: "a4",
         title: "Real Hardware vs Simulators",
-        description: "Explore the differences between simulated and real quantum systems",
+        description:
+          "Explore the differences between simulated and real quantum systems",
         content:
           "Quantum simulators run on classical computers and can perfectly represent quantum states without noise. Real quantum hardware (IBM, Google, IonQ) has noise, limited connectivity, and calibration errors. Understanding these differences is crucial for quantum software development.",
         duration: "11 min",
@@ -160,8 +164,9 @@ export default function Learning() {
           <div className="mb-12">
             <h1 className="text-4xl font-bold mb-3">Learning Path</h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Progress through structured quantum computing concepts from beginner to advanced. 
-              Each lesson is paired with an interactive lab to reinforce your learning.
+              Progress through structured quantum computing concepts from
+              beginner to advanced. Each lesson is paired with an interactive
+              lab to reinforce your learning.
             </p>
           </div>
 
@@ -170,12 +175,18 @@ export default function Learning() {
             {courses.map((course, courseIdx) => (
               <div key={course.level}>
                 {/* Course Header */}
-                <div className={`mb-8 p-8 rounded-xl bg-gradient-to-r ${course.color} border border-border`}>
+                <div
+                  className={`mb-8 p-8 rounded-xl bg-gradient-to-r ${course.color} border border-border`}
+                >
                   <div className="flex items-center gap-4 mb-3">
                     <span className="text-4xl">{course.icon}</span>
                     <div>
-                      <h2 className="text-3xl font-bold text-foreground">{course.level} Level</h2>
-                      <p className="text-muted-foreground">{course.description}</p>
+                      <h2 className="text-3xl font-bold text-foreground">
+                        {course.level} Level
+                      </h2>
+                      <p className="text-muted-foreground">
+                        {course.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -190,7 +201,9 @@ export default function Learning() {
                       {/* Lesson Header - Click to expand */}
                       <button
                         onClick={() =>
-                          setExpandedLesson(expandedLesson === lesson.id ? null : lesson.id)
+                          setExpandedLesson(
+                            expandedLesson === lesson.id ? null : lesson.id,
+                          )
                         }
                         className="w-full p-6 text-left hover:bg-primary/5 transition-colors"
                       >
@@ -202,7 +215,9 @@ export default function Learning() {
                             <p className="text-sm text-muted-foreground mb-3">
                               {lesson.description}
                             </p>
-                            <p className="text-xs text-muted-foreground">⏱ {lesson.duration}</p>
+                            <p className="text-xs text-muted-foreground">
+                              ⏱ {lesson.duration}
+                            </p>
                           </div>
                           <svg
                             className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform ${
@@ -262,24 +277,35 @@ export default function Learning() {
 
           {/* Learning Suggestions */}
           <div className="mt-16 p-8 rounded-xl border border-border bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10">
-            <h2 className="text-2xl font-bold text-foreground mb-6">📚 Learning Tips</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6">
+              📚 Learning Tips
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
-                <h3 className="font-semibold text-foreground mb-2">1. Learn, Then Practice</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  1. Learn, Then Practice
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  Read each lesson carefully, then visit the related lab to see concepts in action.
+                  Read each lesson carefully, then visit the related lab to see
+                  concepts in action.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">2. Experiment Freely</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  2. Experiment Freely
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  In the labs, try different settings and gates. Experimentation builds intuition.
+                  In the labs, try different settings and gates. Experimentation
+                  builds intuition.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">3. Use AI Mentor</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  3. Use AI Mentor
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  When stuck, ask the AI Mentor for hints and explanations of results.
+                  When stuck, ask the AI Mentor for hints and explanations of
+                  results.
                 </p>
               </div>
             </div>
@@ -287,15 +313,21 @@ export default function Learning() {
 
           {/* Progression Path */}
           <div className="mt-12 p-8 rounded-xl border border-border bg-card">
-            <h2 className="text-2xl font-bold text-foreground mb-6">🎯 Recommended Learning Order</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6">
+              🎯 Recommended Learning Order
+            </h2>
             <div className="space-y-3">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-green-500/20 border border-green-500/30 flex items-center justify-center font-bold text-green-400">
                   1
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Beginner Level</p>
-                  <p className="text-xs text-muted-foreground">Build foundational understanding (~25 minutes)</p>
+                  <p className="font-semibold text-foreground">
+                    Beginner Level
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Build foundational understanding (~25 minutes)
+                  </p>
                 </div>
                 <Link
                   to="/labs/qubit"
@@ -309,8 +341,12 @@ export default function Learning() {
                   2
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Intermediate Level</p>
-                  <p className="text-xs text-muted-foreground">Master quantum operations (~40 minutes)</p>
+                  <p className="font-semibold text-foreground">
+                    Intermediate Level
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Master quantum operations (~40 minutes)
+                  </p>
                 </div>
                 <Link
                   to="/labs/gates"
@@ -324,8 +360,12 @@ export default function Learning() {
                   3
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Advanced Level</p>
-                  <p className="text-xs text-muted-foreground">Explore advanced topics (~50 minutes)</p>
+                  <p className="font-semibold text-foreground">
+                    Advanced Level
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    Explore advanced topics (~50 minutes)
+                  </p>
                 </div>
                 <Link
                   to="/labs/noise"
