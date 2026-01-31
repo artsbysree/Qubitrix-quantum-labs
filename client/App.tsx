@@ -9,10 +9,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
 import Learning from "./pages/Learning";
 import Labs from "./pages/Labs";
-import NoiseImpactLab from "./pages/NoiseImpactLab";
-import Guidance from "./pages/Guidance";
+import QubitLab from "./pages/QubitLab";
+import Mentor from "./pages/Mentor";
 import Settings from "./pages/Settings";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -29,10 +30,11 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/learning" element={<Learning />} />
           <Route path="/labs" element={<Labs />} />
-          <Route path="/labs/noise-impact" element={<NoiseImpactLab />} />
-          <Route path="/guidance" element={<Guidance />} />
+          <Route path="/labs/qubit" element={<QubitLab />} />
+          <Route path="/mentor" element={<Mentor />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
