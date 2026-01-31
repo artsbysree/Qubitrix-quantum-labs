@@ -26,14 +26,14 @@ export default function Login() {
             {/* Header */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                   <span className="text-primary-foreground font-bold">Q</span>
                 </div>
-                <span className="text-2xl font-bold text-foreground">Qubitrix</span>
+                <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Qubitrix</span>
               </div>
               <h1 className="text-2xl font-bold text-foreground mb-2">Welcome back</h1>
-              <p className="text-muted-foreground">
-                Reality-driven quantum labs for students
+              <p className="text-muted-foreground text-sm">
+                Continue your quantum learning journey
               </p>
             </div>
 
