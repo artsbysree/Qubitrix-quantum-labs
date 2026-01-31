@@ -12,61 +12,53 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Qubitrix Color Scheme */
-    --background: 50 10% 98%;
-    --foreground: 220 12% 18%;
+    /* Dark Qubitrix Color Scheme */
+    --background: 220 20% 11%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 12% 18%;
+    --card: 220 20% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 12% 18%;
+    --popover: 220 20% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary: Muted Indigo/Slate Blue */
-    --primary: 245 35% 50%;
+    /* Primary: Deep Indigo */
+    --primary: 260 70% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Soft Violet (used sparingly) */
-    --secondary: 275 30% 70%;
-    --secondary-foreground: 220 12% 18%;
+    /* Secondary: Teal/Cyan accent */
+    --secondary: 180 60% 50%;
+    --secondary-foreground: 220 20% 11%;
 
-    /* Muted: Light Neutral Grey */
-    --muted: 220 10% 92%;
-    --muted-foreground: 220 8% 45%;
+    /* Muted: Dark Grey */
+    --muted: 220 15% 25%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accent: Same as primary for consistency */
-    --accent: 245 35% 50%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent: Teal for highlights */
+    --accent: 180 60% 50%;
+    --accent-foreground: 220 20% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 88%;
-    --input: 220 12% 94%;
-    --ring: 245 35% 50%;
+    --border: 220 15% 22%;
+    --input: 220 20% 18%;
+    --ring: 260 70% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 50 10% 98%;
-
-    --sidebar-foreground: 220 12% 18%;
-
-    --sidebar-primary: 245 35% 50%;
-
+    --sidebar-background: 220 20% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 260 70% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 15% 22%;
+    --sidebar-ring: 260 70% 55%;
 
-    --sidebar-accent: 220 10% 92%;
-
-    --sidebar-accent-foreground: 220 12% 18%;
-
-    --sidebar-border: 220 12% 88%;
-
-    --sidebar-ring: 245 35% 50%;
-
-    /* Additional design tokens for Qubitrix */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* Glow effects for dark theme */
+    --glow-purple: drop-shadow(0 0 20px rgba(147, 112, 219, 0.4));
+    --glow-teal: drop-shadow(0 0 15px rgba(32, 201, 201, 0.3));
   }
 
   .dark {
