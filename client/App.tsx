@@ -13,10 +13,13 @@ import Dashboard from "./pages/Dashboard";
 import Learning from "./pages/Learning";
 import Labs from "./pages/Labs";
 import QubitLab from "./pages/QubitLab";
+import NoiseImpactLab from "./pages/NoiseImpactLab";
+import PlaceholderLab from "./pages/PlaceholderLab";
 import Mentor from "./pages/Mentor";
 import Settings from "./pages/Settings";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+
 
 const queryClient = new QueryClient();
 
@@ -46,3 +49,5 @@ const App = () => (
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
+
+<Route path="*" element={<NotFound />} />
