@@ -69,12 +69,12 @@ export default function GatesLab() {
     {
       state: "|0⟩",
       count: measurements[0],
-      probability: (measurements[0] / totalMeasurements * 100).toFixed(1),
+      probability: ((measurements[0] / totalMeasurements) * 100).toFixed(1),
     },
     {
       state: "|1⟩",
       count: measurements[1],
-      probability: (measurements[1] / totalMeasurements * 100).toFixed(1),
+      probability: ((measurements[1] / totalMeasurements) * 100).toFixed(1),
     },
   ];
 
@@ -84,7 +84,9 @@ export default function GatesLab() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-2">Quantum Gates Playground</h1>
+            <h1 className="text-4xl font-bold mb-2">
+              Quantum Gates Playground
+            </h1>
             <p className="text-muted-foreground text-lg">
               Build quantum circuits by applying gates to your qubit
             </p>
@@ -253,9 +255,14 @@ export default function GatesLab() {
                 </h4>
                 <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
                   <li>How quantum gates transform qubit states</li>
-                  <li>The difference between deterministic and probabilistic outputs</li>
+                  <li>
+                    The difference between deterministic and probabilistic
+                    outputs
+                  </li>
                   <li>How to build multi-gate quantum circuits</li>
-                  <li>The relationship between gates and measurement outcomes</li>
+                  <li>
+                    The relationship between gates and measurement outcomes
+                  </li>
                 </ul>
               </div>
             </div>
